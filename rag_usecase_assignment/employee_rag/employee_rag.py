@@ -16,23 +16,19 @@ def load_chunks(filepath):
     with open(filepath, "r", encoding="utf-8") as f:
         text = f.read()
 
-    # Split by policy headers (lines starting with #) to keep related content together
     sections = []
     current_section = []
     
     for line in text.split('\n'):
-        # If line starts with # and we have accumulated content, save it as a chunk
         if line.strip().startswith('#') and current_section:
             sections.append('\n'.join(current_section).strip())
             current_section = [line]
         else:
             current_section.append(line)
     
-    # Add the last section
     if current_section:
         sections.append('\n'.join(current_section).strip())
     
-    # Filter out very short sections
     chunks = [s for s in sections if len(s.strip()) > 50]
 
     return [Document(f"chunk_{i}", c, filepath) for i, c in enumerate(chunks)]
