@@ -1,0 +1,20 @@
+
+[employee_rag]
+|-- employee_rag.py
+|-- hr_policies.txt
+|-- Open Notebook.onetoc2
+
+[legal_rag]
+|-- contract.txt
+|-- legal_rag.py
+|-- Open Notebook.onetoc2
+
+[support_ticket_rag]
+|-- tickets.csv
+|-- ticket_rag.py
+|-- Open Notebook.onetoc2
+
+[technical_docs_rag]
+|-- api_docs.txt
+|-- docs_rag.py
+|-- Open Notebook.onetoc2

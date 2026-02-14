@@ -1,0 +1,98 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.py[cod]
+*.so
+*.egg-info/
+dist/
+build/
+
+# =========================
+# Virtual Environments
+# =========================
+venv/
+.env/
+.env.*
+.venv/
+ENV/
+
+# =========================
+# Environment / Secrets
+# =========================
+.env
+.env.local
+.env.dev
+.env.prod
+*.env
+*.key
+*.pem
+secrets/
+config.json
+
+# =========================
+# Logs
+# =========================
+*.log
+logs/
+*.out
+
+# =========================
+# Jupyter / Notebook temp
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Microsoft Office / OneNote
+# =========================
+*.onetoc2
+~$*
+
+# =========================
+# Data / Large Files
+# =========================
+*.csv
+*.sqlite
+*.db
+*.parquet
+*.pkl
+*.model
+
+# =========================
+# Ollama / Local Models
+# =========================
+.ollama/
+models/
+*.gguf
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# IDE / Editor
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# Testing / Coverage
+# =========================
+.coverage
+htmlcov/
+pytest_cache/
+
+# =========================
+# Misc
+# =========================
+tmp/
+temp/
+*.bak
