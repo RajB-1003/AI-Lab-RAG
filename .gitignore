@@ -54,6 +54,9 @@ logs/
 # =========================
 # Data / Large Files
 # =========================
+# Exception: Allow sample dataset for support ticket RAG
+!rag_usecase_assignment/support_ticket_rag/tickets.csv
+
 *.csv
 *.sqlite
 *.db
